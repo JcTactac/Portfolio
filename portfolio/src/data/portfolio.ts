@@ -53,7 +53,7 @@ export const personalInfo = {
   age: 21,
   email: 'jeanchristophe.lay0@gmail.com',
   phone: '07 82 86 69 78',
-  linkedin: 'https://www.linkedin.com/in/jc-lay/',
+  linkedin: 'https://www.linkedin.com/in/jean-christophe-lay-2a00b934a/',
   github: 'https://github.com/JcTactac',
   cvLink: '', // TODO: ajouter le lien vers le CV
 };
