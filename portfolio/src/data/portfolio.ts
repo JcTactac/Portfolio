@@ -103,7 +103,7 @@ export const projects: Project[] = [
     learnings: [
       'Développer une solution informatique à un client et à partir d’un besoin précis',
       'Réaliser de la programmation non orienté objet',
-      'Réaliser des tests techniques',
+      'Réaliser des jeux de test',
       'Acquérir et améliorer les compétences pour travailler efficacement en équipe',
     ],
     link: 'https://github.com/JcTactac/Morpion',
@@ -120,7 +120,7 @@ export const projects: Project[] = [
       'Développer une solution informatique à un client',
       'Réaliser de la programmation orienté objet',
       'Réaliser du développement sous une architecture MVC',
-      'Réaliser des tests techniques',
+      'Réaliser des jeux de test',
       'Mettre en place et utiliser des outils de gestion de projet',
       'Recueillir et analyser les besoins clients',
       'Acquérir, améliorer les compétences pour travailler efficacement en équipe',
