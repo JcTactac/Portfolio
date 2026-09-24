@@ -33,7 +33,7 @@ function ProjectDetail() {
           <div className="project-detail-content">
             <div className="project-detail-image">
               {project.image ? (
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} decoding="async" />
               ) : (
                 <div className="project-image-placeholder project-detail-placeholder">
                   {project.title}
@@ -86,7 +86,7 @@ function ProjectDetail() {
                       key={i}
                       onClick={() => setLightbox(item.src)}
                     >
-                      <img src={item.src} alt={item.caption} />
+                      <img src={item.src} alt={item.caption} loading="lazy" decoding="async" />
                       <span className="gallery-caption">{item.caption}</span>
                     </button>
                   ))}
@@ -103,7 +103,7 @@ function ProjectDetail() {
                   {project.technologies.map((tech) => (
                     <span className="tech-tag" key={tech}>
                       {techLogos[tech] && (
-                        <img src={techLogos[tech]} alt={tech} className="tech-tag-icon" />
+                        <img src={techLogos[tech]} alt={tech} className="tech-tag-icon" loading="lazy" decoding="async" />
                       )}
                       {tech}
                     </span>
@@ -143,7 +143,7 @@ function ProjectDetail() {
               <Link to={`/projet/${p.slug}`} className="project-card" key={p.slug}>
                 <div className="project-image">
                   {p.image ? (
-                    <img src={p.image} alt={p.title} />
+                    <img src={p.image} alt={p.title} loading="lazy" decoding="async" />
                   ) : (
                     <div className="project-image-placeholder">{p.title}</div>
                   )}

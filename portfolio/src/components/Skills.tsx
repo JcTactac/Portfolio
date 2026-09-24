@@ -12,7 +12,7 @@ function Skills() {
         {items.map((skill) => (
           <div className="skill-card" key={skill.name}>
             {skill.icon ? (
-              <img className="skill-icon" src={skill.icon} alt={skill.name} />
+              <img className="skill-icon" src={skill.icon} alt={skill.name} loading="lazy" decoding="async" />
             ) : (
               <div className="skill-icon-placeholder">{skill.name[0]}</div>
             )}

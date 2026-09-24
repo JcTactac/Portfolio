@@ -10,7 +10,7 @@ function Interests() {
             <div className="interest-card" key={interest.name}>
               <div className="interest-image">
                 {interest.image ? (
-                  <img src={interest.image} alt={interest.name} />
+                  <img src={interest.image} alt={interest.name} loading="lazy" decoding="async" />
                 ) : (
                   <div className="interest-image-placeholder">
                     {/* TODO: ajouter image */}

@@ -26,7 +26,7 @@ function Projects() {
                   >
                     <div className="project-image">
                       {project.image ? (
-                        <img src={project.image} alt={project.title} />
+                        <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
                       ) : (
                         <div className="project-image-placeholder">
                           {project.title}
