@@ -36,7 +36,7 @@ function ExperienceDetail() {
           <div className="project-detail-content">
             <div className="project-detail-image">
               {experience.image ? (
-                <img src={experience.image} alt={experience.company} />
+                <img src={experience.image} alt={experience.company} decoding="async" />
               ) : (
                 <div className="project-image-placeholder project-detail-placeholder">
                   {experience.company}
@@ -89,7 +89,7 @@ function ExperienceDetail() {
                       key={i}
                       onClick={() => setLightbox(item.src)}
                     >
-                      <img src={item.src} alt={item.caption} />
+                      <img src={item.src} alt={item.caption} loading="lazy" decoding="async" />
                       <span className="gallery-caption">{item.caption}</span>
                     </button>
                   ))}
@@ -106,7 +106,7 @@ function ExperienceDetail() {
                   {experience.technologies.map((tech) => (
                     <span className="tech-tag" key={tech}>
                       {techLogos[tech] && (
-                        <img src={techLogos[tech]} alt={tech} className="tech-tag-icon" />
+                        <img src={techLogos[tech]} alt={tech} className="tech-tag-icon" loading="lazy" decoding="async" />
                       )}
                       {tech}
                     </span>

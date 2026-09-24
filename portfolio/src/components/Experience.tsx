@@ -18,7 +18,7 @@ function Experience() {
               >
                 <div className="experience-card-image">
                   {exp.image ? (
-                    <img src={exp.image} alt={exp.company} />
+                    <img src={exp.image} alt={exp.company} loading="lazy" decoding="async" />
                   ) : (
                     <div className="project-image-placeholder">{exp.company}</div>
                   )}
