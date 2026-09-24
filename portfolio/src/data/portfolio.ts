@@ -48,7 +48,7 @@ export interface Experience {
 export const personalInfo = {
   name: 'Jean-Christophe Lay',
   shortName: 'Jean-Christophe Lay',
-  title: 'Étudiant en 2ème année de BUT Informatique',
+  title: 'Étudiant en 3ème année de BUT Informatique',
   school: 'IUT de Montreuil',
   age: 21,
   email: 'jeanchristophe.lay0@gmail.com',
@@ -62,7 +62,7 @@ export const aboutText =
   "Immergé dans le monde de l'informatique depuis tout petit, j'ai rapidement " +
   "eu un désir de comprendre ce monde, de comprendre comment il fonctionne, d'apprendre et d'en faire " +
   "mon métier." +
-  "Je suis actuellement en 2ème année de BUT Informatique et j'envisage, après l'avoir terminé, de " +
+  " Je suis actuellement en 3ème année de BUT Informatique et j'envisage, après l'avoir terminé, de " +
   "poursuivre mes études en intégrant une école d'ingénieur pour à terme travailler en tant qu'ingénieur " +
   "dans la data. N'hésitez pas à me contacter pour toute question, que ce soit " +
   "sur mes compétences, mes motivations, mes notes...";
@@ -284,8 +284,7 @@ export const experiences: Experience[] = [
     role: 'Stagiaire développeur fullstack',
     image: '/images/operisDashboard.png',
     description: 'Application interne de gestion de tickets et suivi du temps passé, développée en stage.',
-    details: "Operis est une application web interne développée durant mon stage de 16 semaines chez DLM Soft, une entreprise spécialisée dans le développement de logiciels métier pour les collectivités territoriales. L'objectif était de moderniser et fusionner deux outils existants : BugTracker et OroTimeSheet, en une solution unique de gestion de tickets et de suivi du temps passé, destinée à l'équipe interne et aux clients.\n\nMa mission s'est articulée en deux phases. La première consistait à remplacer le framework UI provisoire par DLMSoft Common Blazor, le framework interne de l'entreprise, en adaptant plus de 130 fichiers Razor pour assurer la compatibilité. La seconde portait sur la conception de la base de données PostgreSQL, la migration des données depuis les deux bases existantes (avec conversion de formats DokuWiki vers HTML, gestion des données orphelines et transposition des mappings en C#), puis la mise en place d'une API REST avec architecture CQRS et MediatR pour connecter le frontend Blazor aux données réelles.\n\nL'application gère les tâches, projets, commentaires, pièces jointes et droits utilisateurs, avec authentification JWT et notifications en temps réel via SignalR.",
-    technologies: ['C#', 'Blazor', 'PostgreSQL', 'SQL', 'Git'],
+    details: "Application web interne développée durant mon stage de 16 semaines chez DLM Soft, une entreprise spécialisée dans le développement de logiciels métier pour les collectivités territoriales. L'objectif était de moderniser et fusionner deux outils existants, l'un de gestion de tickets et l'autre de suivi du temps passé, en une solution unique destinée à l'équipe interne et aux clients.\n\nMa mission s'est articulée en deux phases. La première consistait à remplacer le framework UI provisoire par le framework Blazor interne de l'entreprise, en adaptant plus de 130 composants pour assurer la compatibilité. La seconde portait sur la conception de la base de données PostgreSQL et la migration des données depuis les deux bases existantes : conversion de contenus DokuWiki en HTML, gestion des données orphelines et réécriture des correspondances de données en C#. J'ai ensuite mis en place une API REST en architecture CQRS avec MediatR pour connecter le frontend Blazor aux données réelles.\n\nL'application gère les tâches, projets, commentaires, pièces jointes et droits utilisateurs, avec authentification et notifications en temps réel.",    technologies: ['C#', 'Blazor', 'PostgreSQL', 'SQL', 'Git'],
     learnings: [
       'Architecture CQRS avec MediatR : séparation des Commands (écriture) et Queries (lecture) dans une architecture en couches',
       'Migration de données complexe : conversion de formats (DokuWiki → HTML via regex), gestion des données orphelines et transposition de mappings SQL en C#',

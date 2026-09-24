@@ -13,7 +13,7 @@ function ExperienceDetail() {
       <section className="section project-detail">
         <div className="section-container">
           <p>Expérience introuvable.</p>
-          <Link to="/#experience" className="btn-back">Retour aux expériences</Link>
+          <Link to="/" state={{ scrollTo: 'experience' }} className="btn-back">Retour aux expériences</Link>
         </div>
       </section>
     );
@@ -25,7 +25,7 @@ function ExperienceDetail() {
     <>
       <section className="section project-detail">
         <div className="section-container">
-          <Link to="/#experience" className="btn-back">&larr; Retour aux expériences</Link>
+          <Link to="/" state={{ scrollTo: 'experience' }} className="btn-back">&larr; Retour aux expériences</Link>
           <div className="project-detail-header">
             <h1>{experience.company}</h1>
             <p className="experience-detail-meta">

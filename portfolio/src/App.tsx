@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
@@ -19,13 +19,11 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 function Home() {
   const location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const scrollTo = (location.state as { scrollTo?: string })?.scrollTo;
     if (scrollTo) {
-      setTimeout(() => {
-        const el = document.getElementById(scrollTo);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      const el = document.getElementById(scrollTo);
+      if (el) el.scrollIntoView({ behavior: 'auto' });
       window.history.replaceState({}, '');
     }
   }, [location.state]);
@@ -49,8 +47,11 @@ function App() {
   useScrollReveal();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-  }, [location.pathname]);
+    const scrollTo = (location.state as { scrollTo?: string })?.scrollTo;
+    if (!scrollTo) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }
+  }, [location.pathname, location.state]);
 
   return (
     <>
