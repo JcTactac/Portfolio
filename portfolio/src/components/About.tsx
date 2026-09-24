@@ -7,7 +7,7 @@ function About() {
         <h2 className="section-heading">À Propos de moi</h2>
         <div className="about-content">
           <div className="about-image">
-            <img src="/images/profil.png" alt={personalInfo.name} />
+            <img src="/images/profil.webp" alt={personalInfo.name} loading="lazy" decoding="async" />
           </div>
           <div className="about-text">
             <p>{aboutText}</p>
