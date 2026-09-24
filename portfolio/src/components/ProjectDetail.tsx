@@ -13,7 +13,7 @@ function ProjectDetail() {
       <section className="section project-detail">
         <div className="section-container">
           <p>Projet introuvable.</p>
-          <Link to="/#projects" className="btn-back">Retour aux projets</Link>
+          <Link to="/" state={{ scrollTo: 'projects' }} className="btn-back">Retour aux projets</Link>
         </div>
       </section>
     );
@@ -26,7 +26,7 @@ function ProjectDetail() {
     <>
       <section className="section project-detail">
         <div className="section-container">
-          <Link to="/#projects" className="btn-back">&larr; Retour aux projets</Link>
+          <Link to="/" state={{ scrollTo: 'projects' }} className="btn-back">&larr; Retour aux projets</Link>
           <div className="project-detail-header">
             <h1>{project.title}</h1>
           </div>
